@@ -11,7 +11,7 @@ Vagrant.configure('2') do |config|
   config.vm.box = 'centos/7'
 
   nodes.each do |node|
-    node_name = node['name']
+    node_name = node['name'].split('.').first
     node_ip = node['ip']
     node_cpus = node['cpus']
     node_memory = node['memory']
