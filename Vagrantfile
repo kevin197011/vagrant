@@ -28,7 +28,13 @@ Vagrant.configure('2') do |config|
         vb.name = node_name
       end
 
-      config.vm.provision :shell, path: node_shell
+     config.vm.provision :shell, path: node_shell
+
+      # config.vm.provision "puppet" do |puppet|
+      #   puppet.manifests_path = "manifests"
+      #   puppet.manifest_file = "site.pp"
+      # end
+
     end
   end
 end
