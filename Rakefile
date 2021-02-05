@@ -2,7 +2,6 @@
 
 require 'time'
 
-
 task default: %w[push]
 
 task :fmt do
